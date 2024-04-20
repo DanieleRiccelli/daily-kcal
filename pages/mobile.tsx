@@ -6,7 +6,7 @@ import Quagga from 'quagga';
 const MobilePage = () => {
     const [barcodeData, setBarcodeData] = useState("");
     useEffect(() => {
-        const socket = io('https://9b2e-80-116-209-81.ngrok-free.app/');
+        const socket = io('https://daily-kcal-server.vercel.app/');
 
         Quagga.init({
             inputStream: {

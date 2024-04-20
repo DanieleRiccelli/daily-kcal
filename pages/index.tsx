@@ -7,7 +7,7 @@ const DesktopPage = () => {
   const [product, setProduct] = useState<any>({});
 
   useEffect(() => {
-    const socket = io('http://localhost:3000');
+    const socket = io('https://daily-kcal-server.vercel.app/');
 
     socket.on('barcode_data', async (data) => {
       setBarcode(data);
