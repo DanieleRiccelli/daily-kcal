@@ -6,7 +6,7 @@ import Quagga from 'quagga';
 const MobilePage = () => {
     const [barcodeData, setBarcodeData] = useState("");
     useEffect(() => {
-        const socket = io('https://daily-kcal-server.vercel.app/');
+        const socket = io('https://corsproxy.io/?https://daily-kcal-server.vercel.app/');
 
         Quagga.init({
             inputStream: {
