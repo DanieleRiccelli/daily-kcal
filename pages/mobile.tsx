@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
+// @ts-ignore
 import Quagga from 'quagga';
 
 const MobilePage = () => {
